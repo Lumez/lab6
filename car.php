@@ -1,6 +1,6 @@
 <?php
 
-require_once('includes/header.php');
+require('includes/header.php');
 
 // get the database connection
 require('includes/db.php');

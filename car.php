@@ -84,13 +84,13 @@ require('classes/bid.class.php');
 			<form role="form" action="process-bid.php" method="post">
 				<div class="form-group">
 					<label for="bidderName">Name</label>
-					<input type="text" class="form-control" id="bidderName" placeholder="Enter name">
+					<input name="name" type="text" class="form-control" id="bidderName" placeholder="Enter name">
 				</div>
 				<div class="form-group">
 					<label for="bidValue">Bit Amount</label>
-					<input type="number" class="form-control" id="bidValue" placeholder="Enter Bid Amount">
+					<input name="value" type="number" class="form-control" id="bidValue" placeholder="Enter Bid Amount">
 				</div>
-				<input type="hidden" id="carId" value="<?=$_GET['id']?>">
+				<input name="car_id" type="hidden" id="carId" value="<?=$_GET['id']?>">
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 						
